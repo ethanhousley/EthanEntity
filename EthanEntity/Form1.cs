@@ -101,17 +101,14 @@ namespace EthanEntity
 
         public bool ValidateField()                 //ValidationMethod
         {
-                bool checkVal;
-            
+         
             if (string.IsNullOrEmpty(txtUserIdBx.Text))
             {
-                
-                checkVal = false;
-                return checkVal;
+
+                return false;
             }
 
-                return checkVal = true;
-
+            return true;
         }
     }
 
